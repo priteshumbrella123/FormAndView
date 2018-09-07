@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<h2><p>Today Date is : {{today}}</p></h2>
+<p>
+{% if today.day == 1%}
+
+first day of month
+{% elif today.day == 2 %}
+
+second day of month
+ {% elif today.day == 30 or today.day == 31%}
+
+last day of the month
+{% else %}
+
+i don't know
+
+</p><br>
+{% endif %}
+<p>
+
+    {% for day in dayofweek %}
+
+    {{day}}
+</p>
+
+{%endfor%}
+
+</body>
+</html>
